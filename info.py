@@ -9,7 +9,7 @@ API_HASH = environ.get("API_HASH" , "dec03cafafbd892b285499762a896082")
 BOT_TOKEN = environ.get("BOT_TOKEN" , "7371812846:AAEmtfkd77k-c0xS9F9sA8mtoFLn8DOLacU")
 ADMIN = int(environ.get("ADMIN" , "6324457826"))
 CHAT_GROUP = int(environ.get("CHAT_GROUP", "-1002285455147"))
-LOG_CHANNEL = environ.get("LOG_CHANNEL", "-1002228337057")
+LOG_CHANNEL = environ.get("LOG_CHANNEL", "-1002235582796")
 MONGO_URL = environ.get("MONGO_URL" , "mongodb+srv://vzdkz:cmo941iJf72S3MUP@cluster0.2vib8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 AUTH_CHANNEL = int(
     environ.get("AUTH_CHANNEL", "-1002199891363")
