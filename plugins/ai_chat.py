@@ -22,7 +22,7 @@ async def startcmd(client: Client, message: Message):
         )
     if FSUB and not await get_fsub(client, message):return
     await message.reply_photo(# type:ignore
-        photo="https://telegra.ph/file/595e38a4d76848c01b110.jpg",
+        photo="https://envs.sh/7N7.jpg",
         caption=f"<b>Welcome {userMention},\n\nIᴍ Hᴇʀᴇ Tᴏ Rᴇᴅᴜᴄᴇ Yᴏᴜʀ Pʀᴏʙʟᴇᴍs..\nYᴏᴜ Cᴀɴ Usᴇ Mᴇ As ʏᴏᴜʀ Pʀɪᴠᴀᴛᴇ Assɪsᴛᴀɴᴛ..\nAsᴋ Mᴇ Aɴʏᴛʜɪɴɢ...Dɪʀᴇᴄᴛʟʏ..\n\nMʏ Cʀᴇᴀᴛᴏʀ : <a href=https://t.me/Mrkillersss>𝐀𝐋ＯⓃＥ</a>\nMʏ Lᴏᴠᴇʀ : <a href=tg://settings/>Tʜɪs Pᴇʀsᴏɴ</a></b>",
     ) 
     return
