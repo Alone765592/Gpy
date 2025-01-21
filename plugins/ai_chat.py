@@ -141,6 +141,19 @@ async def ai_res(client: Client, message: Message ):
         await message.reply_text(reply) # type:ignore
         await chat_history.add_history(user_id, history)
     except Exception as e:
+        @Client.on_message(filters.command("start") & filters.incoming)  
+async def start(client: Client, message: Message):  
+    await message.reply_text(  
+        f"Hello {message.from_user.first_name}!\nThis boilerplate is ready to go.",  
+        reply_markup=InlineKeyboardMarkup(  
+            [  
+                [  
+                    InlineKeyboardButton("Help", url="https://t.me/movieupdtehub"),  
+                    InlineKeyboardButton("Callback ping", callback_data=f"ping#{message.from_user.id}")  
+                ]  
+            ]  
+        )  
+    )
         print("Error in ai_res: ", e)
         reply = "Sorry, I am not available right now."
         await message.reply_text(reply) # type:ignore
